@@ -1,0 +1,64 @@
+td { font-size:0.75em; font-family:"Arial" ; color:#000000;}
+th { font-size:0.75em; font-family:"Arial" ; color:#000000; bgcolor:"#E2EBF1";}
+textarea { font-size:1.0em; font-family:"Arial" ; color:#000000;}
+
+.pageHeading{font-size:0.8em; font-family:"Arial" ; color:#33516A; font-weight:bold; text-align:justify;}
+
+.answer { font-size:1.0em; font-family:"Arial" ; color:#146F00;}
+
+.normaltext { font-size:0.75em; font-family:"Arial" ; color:#030303; text-align:justify; bgcolor:"#E0F5FF";}
+.normaltextc { font-size:1.0em; font-family:"Arial" ; color:#990000
+;}
+.normaltextblue { font-size:1.0em; font-family:"Arial" ; color:#193E5B;}
+.hinttextblue{ font-size:1.3em; font-family:"Arial" ; color:#2D506E;}
+
+
+
+.bodyc {background-image: url(../images/topband3.jpg);background-repeat:repeat-y ;bgcolor: #FFFFFF;}
+.bodyc2 {background-image: url(../images/bodytrans2.gif);background-repeat:repeat-y ;bgcolor: #FFFFFF;}
+.bodyc3 {background-image: url(../images/bodytrans3.gif);background-repeat:repeat-y ;bgcolor: #FFFFFF;}	
+
+h1 { font-size:0.8em; font-family:"Arial"; color:#000000;margin:0em;margin-top:1.4em;}
+h2 { font-size:1.0em; font-family:"Arial" ; color:#000000;margin:0em;font-weight:bold;}
+
+.top1 {background-image: url(../images/topband2.jpg); }
+.top2 {background-image: url(../images/topband2.jpg); }
+
+.courseHeading { font-size:0.8em; font-family:"Arial" ; color:#FFFFFF;font-weight:bold;}
+.titleText { font-size:0.8em; font-family:"Arial" ; color:#000000;}
+
+.objtext {
+	font-size:0.7em;
+	font-family:"Arial";
+	color:#292929;
+
+}
+.mintext {
+	font-size:0.7em;
+	font-family:"Arial";
+	color:#292929;
+	text-align: center;
+}
+
+.popUp {border:0.01em solid #0F5583;background-color: #FFFFFF;padding:0.5em; font-size:0.75em; font-family:"Arial" ; color:#030303; text-align:left;} 
+
+.popUpnoborder{ background-color: #EEECE1;padding:0.5em; font-size:0.99em; font-family:"Arial" ; color:#030303; text-align:left;} 
+
+.popUpTable{border:0.20em solid #598AA9;background-color: #FFFFFF;padding:0.5em;} 
+
+.popUpstar { font-size:0.75em; font-family:"Arial" ; color:#030303; text-align:justify; border:0.01em solid #0F5583; padding:0.5em; background-color: #FFFFFF;} 
+
+
+.popUpback {background-color: #FFFFFF;padding:0.5em;} 
+.handcursor {cursor:pointer}
+
+.popUp1 {border:0.05em solid #0F5583;background-color: #E2EBF1;padding:0.5em;font-size:0.75em; font-family:"Arial" ;} 
+.popUp2 {border:1px solid;padding:2px} 
+.whitetext { color:#ffffff;}
+
+.copywrite {font-size:0.8em; font-family:"Arial" ; color:#000000;text-align:right}
+
+
+
+
+

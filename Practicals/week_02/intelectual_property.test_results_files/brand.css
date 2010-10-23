@@ -1,0 +1,134 @@
+
+/*Content Frame background color / text color / background image*/
+#contentFrame,
+#schemePreview, 
+body, 
+body.ineditmode, 
+body.topFrame,
+div.breadcrumbs,
+div.paneTabs ul li.active, 
+div.paneTabs ul li,
+body.wizardBody div.containerWizard {
+    background: url(https://duo.dur.ac.uk/branding/colorpalettes/BlueSysDefault/TestBackdropLighter.png) repeat 0 0;
+    background-color:;
+    color:#000000;
+}
+/*Content area background color / text color / background image */
+#contentArea,
+#schemePreviewBody,
+.container, .contentPane div.bottomRound b {        
+    background-color:#FFFFFF;
+    color:#000000;
+}
+
+/*Primary button background / text color*/
+#primaryButton, 
+.actionBar ul li a, .actionBar ul li.mainButton a,  .actionbar_portal ul li a,
+div.tabPreview div.actionBar ul li.mainButton a, div.tabPreview div.actionBar ul li.mainButton a:hover,
+div.navPalette div.actionBarMicro ul li.mainButton a, input.submit,
+div.threadButtons a.submit,
+.taskbuttondiv button.submit, .taskbuttondiv input.submit,
+.taskButtonsContent button.submit, .taskButtonsContent input.submit, 
+div.controls button.submit, div.controls input.submit, .taskbuttondiv button.disabled, .taskbuttondiv input.disabled,
+.taskButtonsContent button.disabled, .taskButtonsContent input.disabled,
+div.controls button.disabled, div.controls input.disabled,
+div.threadButtons a.reply, div.dbThreadInfo p a.reply,
+div.rumble ul li.jumptopage a.gotopage, div.rumble_top ul li.jumptopage a.gotopage, .paging a.gotopage, 
+#loginBox li input[type="submit"] {
+    background-color:#003972;
+    color:#FFFFFF;
+}
+
+/*Secondary button background / text color*/
+#secondaryButton, 
+.actionBar ul li.search a, 
+.actionBar ul li.secondaryButton a, 
+.actionBar_portal ul li.search a,
+div.tabPreview div.actionBar ul li.secondaryButton a, 
+div.tabPreview div.actionBar ul li.secondaryButton a:hover,
+.pageTitle h1 a.secondaryButton,
+.taskbuttondiv button, .taskbuttondiv input,
+.taskButtonsContent button, .taskButtonsContent input,
+div.controls button, div.controls input, p.okbutton input {
+    background-color:#FFFFFF;
+    color:#000000;
+}
+
+/*Page Header background color / text color / background image */
+#pageHeader, 
+#schemePreviewHead,
+div.pageTitle,
+div.actionBar, 
+div.contentPaneWide div.actionBar,
+div.actionBar ul, 
+div.localViewToggle,
+.navPalette div.actionBarMicro, 
+div.contentPane div.topRound b, 
+div.topRound b,
+div.listCm div.topRound b, 
+div.buttonCm div.topRound b, 
+div.treeContainer div.topRound b,
+div.treeViewCs div.topRound b,
+div#lightboxContent h2,
+#lightbox div.topRound b,
+#puller {
+    background-color:#FFF1C5;
+    color:#000000;
+}
+
+/*Top Frame Text Color */
+#topFrame, 
+div.topTabs div.topGlobalLinks ul li a.topLevel, 
+div.topTabs-compact div.topGlobalLinks ul li a.topLevel, 
+div.topTabs div.hotItems ul.hotLinks li a  {
+    color:#FFFFFF;
+}
+
+/*Top Frame Background Color / Background Image*/
+#topFrame, 
+.bgBanner {
+    background-image: url(https://duo.dur.ac.uk/branding/colorpalettes/BlueSysDefault/DeepBlueGradTop.png);
+    background-repeat: repeat;
+    background-position: 0 0;
+    background-color:#003972;
+}
+div.topTabs-compact {
+    background:#003972;
+}
+
+/*Top Tab Color/Background Color*/
+#topTab, 
+table.appTabs tbody tr td a, div.topTabs-compact table.appTabs tr td a {   
+    color:#FFFFFF;
+    background-color:#003972;
+}
+
+/*Top Tab Active Tab Color/Background Color*/
+#topTabActive, 
+table.appTabs tbody tr td.active a, table.appTabs tbody tr td.active a:hover, div.topTabs-compact table.appTabs tr td.active a, div.topTabs-compact table.appTabs tr td.active a:hover, table.appTabs tbody tr td a:hover, div.topTabs-compact table.appTabs tr td a:hover {
+    color:#003972;
+    background-color:#DEDEDE;            
+}
+
+/*Module colors*/
+#moduleTitle, 
+.portlet h2, .portlet h2 span.reorder
+{
+    background-color:#004285;
+    color:#FFFFFF;
+}
+.portlet h2 a
+{
+    background-color: transparent;
+    color:#FFFFFF;
+}
+#moduleBorder, #moduleBody, 
+.portlet
+{
+    border-top-color: #E3EFFF;
+    border-left-color: #E3EFFF;
+    border-bottom-color: #E3EFFF;
+    border-right-color: #E3EFFF;
+    background-color:#FFFFFF;
+    color:#000000;    
+}

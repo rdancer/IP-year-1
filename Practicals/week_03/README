@@ -50,3 +50,10 @@ pen.penUp() // not strictly necessary
 
 
 viz screen-shot (file "Initials -- JM.png")
+
+
+c. LabClass BlueJ project
+
+Enrolling more students than a capacity of the class results in an error
+message: "The class is full, you cannot enrol." -- viz screenshot (file
+"lab-classes.log.screenshot.png").

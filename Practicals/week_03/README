@@ -2,7 +2,7 @@ The solution to the problems in IP_Practical02Week03.pdf:
 
 Level 1: Interacting with BlueJ
 
-a. Picture
+a. Draw a picture of a house and Sun
 
 1. Use the new() methods to instantiate objects
 2. Use the makeVisible() methods of the objects to make them visible
@@ -12,4 +12,4 @@ a. Picture
 5. ensure proper layering by changing moveHorizontal(1), then
    moveHorizontal(-1) -- the last shape moved will be brought to front,
    obscuring other overlapping shapes
-6. take screen-shot
+6. take screen-shot House

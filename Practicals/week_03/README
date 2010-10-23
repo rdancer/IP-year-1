@@ -1,0 +1,15 @@
+The solution to the problems in IP_Practical02Week03.pdf:
+
+Level 1: Interacting with BlueJ
+
+a. Picture
+
+1. Use the new() methods to instantiate objects
+2. Use the makeVisible() methods of the objects to make them visible
+3. move the shapes arounds by trial and error by calling
+   moveHorizontal(int), moveVertical(int)
+4. change colors using changeColor(String)
+5. ensure proper layering by changing moveHorizontal(1), then
+   moveHorizontal(-1) -- the last shape moved will be brought to front,
+   obscuring other overlapping shapes
+6. take screen-shot

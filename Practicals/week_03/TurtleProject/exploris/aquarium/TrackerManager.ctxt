@@ -1,0 +1,22 @@
+#BlueJ class context
+comment0.target=class\ TrackerManager
+comment1.params=
+comment1.target=TrackerManager()
+comment10.target=register
+comment2.params=subject
+comment2.target=void\ deregisterTrackers(MobileObject)
+comment3.params=subject
+comment3.target=Set\ viewTrackers(MobileObject)
+comment4.params=
+comment4.target=Set\ viewTrackers()
+comment5.params=turtle
+comment5.target=boolean\ tracking(Turtle)
+comment6.params=subject\ tracker
+comment6.target=void\ deregisterTracker(MobileObject,Tracker)
+comment7.params=subject\ tracker
+comment7.target=void\ registerTracker(MobileObject,Tracker)
+comment8.params=
+comment8.target=void\ deregisterAll()
+comment9.params=
+comment9.target=int\ trackers()
+numComments=11

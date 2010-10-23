@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.target=class\ TurtleLogger
+comment0.text=\nA\ TurtleLogger\ is\ an\ object\ that\ can\ be\ used\ to\ display\ a\ log\ of\ a\ Turtle's\ movements.\n\n@author\:\ Stephan\ Jamieson\n\n@version\:\ 1.0\ndate\:\ 12.08.2003\n\n
+comment1.params=t
+comment1.target=TurtleLogger(Turtle)
+comment1.text=\nCreate\ a\ new\ TurtleLogger\ that\ will\ log\ the\ movements\ of\ "t".\n\n
+comment2.params=
+comment2.target=void\ display()
+comment2.text=\nCreate\ a\ graphical\ display\ of\ the\ TurtleLogger\ on\ the\ computer\ screen.\n\n
+numComments=3

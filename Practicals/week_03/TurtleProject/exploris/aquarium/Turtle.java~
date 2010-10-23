@@ -1,0 +1,98 @@
+package aquarium;
+/**
+* Turtle
+*
+* @author: Stephan Jamieson
+*
+* @version: 1.0
+* date: 12.08.2003
+*
+*/
+import java.awt.Color;
+//
+import motion.ForwardsMovement;
+import motion.MobileObject;
+import motion.PauseControl;
+import motion.Rotation;
+//
+public class Turtle extends MobileObject {
+
+    private String name;
+    private boolean penDown;
+    private Color color;
+    private PauseControl pauseControl;
+
+    public Turtle() {
+	this(Color.black);
+    }
+        
+    public Turtle(Color color) {
+	this(color, "Turtle");
+    }
+
+    public Turtle(String name) {
+	this(Color.black, name);
+    }
+
+    public Turtle(Color color, String name) {
+	super();
+	this.color = color;
+	this.name = name;
+	this.penDown = true;
+	pauseControl = new PauseControl();
+    }
+
+
+    public String getName() {
+	return this.name;
+    }
+
+    public void left(int angle) {
+	this.right(-angle);
+    }
+    
+    public void right(int angle) {
+	// Inform observers of reorientation
+	this.setMoved();
+	this.notifyTrackers( new Rotation(angle) );
+	pauseControl.pause();
+    }
+    
+    public void forward(int distance) {
+	
+	// Inform observers of repositioning
+	this.setMoved();
+	this.notifyTrackers( new ForwardsMovement(distance) );
+	pauseControl.pause();
+    }
+    
+    
+    public void penUp() { 
+	penDown = false;
+    }
+    
+    public void penDown() {
+	penDown = true;
+    }
+    
+    public boolean isPenDown() {
+	return penDown;
+    }
+    
+    
+    public Color getColor() {
+	return this.color;
+    }
+    
+
+    public void setPause(int milliseconds) {
+	pauseControl.setPause(milliseconds);
+    }
+
+    public String toString() {
+	return "Turtle("+this.getName()+")";
+    }
+    
+    
+}
+        

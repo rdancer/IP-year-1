@@ -1,0 +1,101 @@
+package aquarium;
+/**
+* TurtleViewPane
+*
+* @author: Stephan Jamieson
+*
+* @version: 1.0
+* date: 12.08.2003
+*
+*/
+import java.awt.Color;
+import java.awt.Dimension;
+import java.awt.FlowLayout;
+
+import java.util.Iterator;
+import java.util.Set;
+import javax.swing.JPanel;
+import javax.swing.SwingUtilities;
+//
+import graphics.Canvas;
+import motion.Position;
+//
+public class TurtleViewPane extends JPanel {
+
+    
+    private Canvas canvas;
+    private TrackerManager spriteManager;
+    private TrackerManager trailRecorderManager;
+
+
+    public TurtleViewPane() {
+	super(null);
+	canvas = new Canvas();
+	this.add(canvas);
+	spriteManager = new TrackerManager();
+	trailRecorderManager = new TrackerManager();
+    } 
+       
+    public void setSize(int width, int height) {
+	super.setSize(width, height);
+	canvas.setSize(width, height);
+    }
+
+    public void setSize(Dimension dimension) {
+	this.setSize(dimension.width, dimension.height);
+    }
+
+    public void add(Turtle turtle, Position position) {
+	TrailRecorder trailRecorder = new TrailRecorder(this.canvas, position);
+	trailRecorderManager.registerTracker(turtle, trailRecorder);
+
+	final TurtleSprite sprite = new TurtleSprite(position);
+	spriteManager.registerTracker(turtle, sprite);
+
+	sprite.setForeground(turtle.getColor());
+
+	Runnable turtleInjector = new Runnable() {
+		
+		public void run() {
+		    add(sprite);
+		    invalidate();
+		    repaint();
+		}
+	    };
+	SwingUtilities.invokeLater(turtleInjector);
+    }
+
+    public void removeTurtle(Turtle turtle) {
+	
+	Set sprites = spriteManager.viewTrackers(turtle);
+	Iterator iterator = sprites.iterator();
+	while (iterator.hasNext()) {
+	    final TurtleSprite sprite = (TurtleSprite)iterator.next();
+
+	    Runnable turtleExtractor = new Runnable() {
+
+		    public void run() {
+			remove(sprite);
+		    }
+		};
+	    SwingUtilities.invokeLater(turtleExtractor);
+	}
+	spriteManager.deregisterTrackers(turtle);
+	trailRecorderManager.deregisterTrackers(turtle);
+    }
+
+
+    public void removeTurtles() {
+	spriteManager.deregisterAll();
+	trailRecorderManager.deregisterAll();
+	
+	Runnable turtleExtractor = new Runnable() {
+		
+		public void run() {
+		    removeAll();
+		}
+	    };
+	SwingUtilities.invokeLater(turtleExtractor);
+    }
+
+}

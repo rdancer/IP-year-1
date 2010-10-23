@@ -1,0 +1,20 @@
+#BlueJ class context
+comment0.target=class\ MovementLogPane
+comment1.params=o\ movement
+comment1.target=void\ update(MobileObject,Movement)
+comment10.target=jTextArea
+comment11.target=historySize
+comment2.params=
+comment2.target=void\ run()
+comment3.params=value
+comment3.target=void\ setViewSource(boolean)
+comment4.target=displaySource
+comment5.target=HISTORY_EXCESS
+comment6.params=numberOfLines
+comment6.target=void\ setHistorySize(int)
+comment7.params=columns\ rows
+comment7.target=MovementLogPane(int,int)
+comment8.target=DEFAULT_HISTORY
+comment9.params=
+comment9.target=int\ getHistorySize()
+numComments=12

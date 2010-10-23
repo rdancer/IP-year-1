@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.target=class\ PositionViewer
+comment0.text=\nA\ PositionViewer\ is\ an\ object\ that\ can\ be\ used\ to\ obtain\ a\ graphical\ display\ that\ tracks\ a\ Turtle's\ position.\n\n@author\:\ Stephan\ Jamieson\n\n@version\:\ 1.0\ndate\:\ 12.08.2003\n\n
+comment1.params=t\ x\ y\ angle
+comment1.target=PositionViewer(Turtle,int,int,int)
+comment1.text=\nCreate\ a\ new\ PositionViewer\ for\ "t"\ currently\ at\ position\ "x",\ "y"\ and\ "angle"\ degrees\ clockwise\ from\ North.\n\n\n
+comment2.params=
+comment2.target=void\ display()
+comment2.text=\nCreate\ a\ graphical\ display\ of\ the\ PositionViewer\ on\ the\ computer\ screen.\n\n
+numComments=3

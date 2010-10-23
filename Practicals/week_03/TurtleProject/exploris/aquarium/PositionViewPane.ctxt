@@ -1,0 +1,15 @@
+#BlueJ class context
+comment0.target=class\ PositionViewPane
+comment1.params=position
+comment1.target=void\ setPosition(Position)
+comment2.params=position
+comment2.target=PositionViewPane(Position)
+comment3.params=
+comment3.target=Position\ getPosition()
+comment4.params=value
+comment4.target=void\ setEditable(boolean)
+comment5.params=o\ movement
+comment5.target=void\ update(MobileObject,Movement)
+comment6.params=
+comment6.target=void\ run()
+numComments=7

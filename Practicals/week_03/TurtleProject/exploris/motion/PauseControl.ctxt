@@ -1,0 +1,19 @@
+#BlueJ class context
+comment0.target=class\ PauseControl
+comment0.text=\nPauseControl\n\n@author\:\ Stephan\ Jamieson\n\n@version\:\ 1.0\ndate\:\ 12.08.2003\n\n
+comment1.params=
+comment1.target=void\ pauseOn()
+comment2.params=
+comment2.target=void\ pauseOff()
+comment3.target=DEFAULT_PAUSE_PERIOD
+comment4.target=pausePeriod
+comment5.target=pause
+comment6.params=
+comment6.target=void\ pause()
+comment7.params=milliseconds
+comment7.target=void\ setPause(int)
+comment8.params=
+comment8.target=PauseControl()
+comment9.params=milliseconds
+comment9.target=PauseControl(int)
+numComments=10

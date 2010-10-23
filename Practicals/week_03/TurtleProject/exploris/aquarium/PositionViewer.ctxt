@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.target=class\ PositionViewer
+comment1.params=turtle\ position
+comment1.target=PositionViewer(Turtle,Position)
+comment2.params=turtle\ x\ y\ angle
+comment2.target=PositionViewer(Turtle,int,int,int)
+numComments=3

@@ -1,0 +1,24 @@
+#BlueJ package file
+dependency1.from=Canvas
+dependency1.to=DrawingBuffer
+dependency1.type=UsesDependency
+package.editor.height=300
+package.editor.width=420
+package.editor.x=394
+package.editor.y=232
+package.numDependencies=1
+package.numTargets=2
+target1.height=50
+target1.modifiers=0
+target1.name=Canvas
+target1.type=ClassTarget
+target1.width=80
+target1.x=100
+target1.y=10
+target2.height=50
+target2.modifiers=0
+target2.name=DrawingBuffer
+target2.type=ClassTarget
+target2.width=110
+target2.x=110
+target2.y=120

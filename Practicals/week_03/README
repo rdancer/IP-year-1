@@ -12,4 +12,41 @@ a. Draw a picture of a house and Sun
 5. ensure proper layering by changing moveHorizontal(1), then
    moveHorizontal(-1) -- the last shape moved will be brought to front,
    obscuring other overlapping shapes
-6. take screen-shot House
+6. take screen-shot (viz file "Houses and Suns.png")
+
+
+b. Draw one's initials using Turtle
+
+/* draw "J" */
+
+pen.penDown()
+pen.right(120)
+pen.forward(30)
+pen.left(120)
+pen.forward(120)
+pen.penUp()
+
+
+/* move over */
+
+pen.right(90)
+pen.forward(30)
+pen.right(90)
+
+
+/* draw "M" */
+
+pen.penDown()
+pen.forward(120)
+pen.right(180)
+pen.forward(120)
+pen.right(150)
+pen.forward(70)
+pen.left(120)
+pen.forward(70)
+pen.left(210)
+pen.forward(120)
+pen.penUp() // not strictly necessary
+
+
+viz screen-shot (file "Initials -- JM.png")

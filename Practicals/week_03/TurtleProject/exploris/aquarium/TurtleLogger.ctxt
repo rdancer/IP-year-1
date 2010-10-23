@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.target=class\ TurtleLogger
+comment1.params=turtle
+comment1.target=TurtleLogger(Turtle)
+comment2.params=turtle\ columns\ rows
+comment2.target=TurtleLogger(Turtle,int,int)
+numComments=3

@@ -1,6 +1,22 @@
 #BlueJ class context
 comment0.target=PictureMaker()
 comment1.target=void\ display()
+comment10.target=void\ drawExcercise2_4_alternative_approach()
+comment10.text=\nDraw\ the\ 2.4\ Excercise\ from\ \nhttp\://www.dur.ac.uk/cs.programming/local/java/resource.php?id\=10\nDifferent\ approach\:\ Use\ and\ extend\ the\ Turtle\ object;\ this\ is\ more\ OO,\ but\ it's\ not\ pretty\ either\n\n
+comment11.target=void\ drawExcercise2_6()
+comment11.text=\nDraw\ the\ 2.6\ Excercise\ from\ \nhttp\://www.dur.ac.uk/cs.programming/local/java/resource.php?id\=10\n\n
 comment2.target=void\ erase()
 comment3.target=void\ drawInitials()
-numComments=4
+comment4.params=glyph
+comment4.target=void\ drawGlyph(char)
+comment4.text=\ndrawGlyph\ draw\ a\ glyph\ or\ error\ out\ if\ the\ glyph\ is\ not\ known\n\n
+comment5.params=sides
+comment5.target=void\ drawPolygon(int)
+comment6.params=sides\ color
+comment6.target=void\ drawPolygon(int,\ java.awt.Color)
+comment7.params=sides\ color\ sideLength
+comment7.target=void\ drawPolygon(int,\ java.awt.Color,\ int)
+comment8.target=void\ drawExcercise_2_3()
+comment9.target=void\ drawExcercise2_4()
+comment9.text=\nDraw\ the\ 2.4\ Excercise\ from\ \nhttp\://www.dur.ac.uk/cs.programming/local/java/resource.php?id\=10\n\n
+numComments=12

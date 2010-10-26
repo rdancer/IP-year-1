@@ -7,7 +7,7 @@
  * This class was written as an early example for teaching Java with BlueJ.
  * 
  * @author  Michael Kolling and David J. Barnes
- * @version 2008.03.30
+ * @author  Jan Minář <rdancer@rdancer.org>
  */
 public class Picture
 {
@@ -15,6 +15,7 @@ public class Picture
     private Square window;
     private Triangle roof;
     private Circle sun;
+    private Square ground;
 
     /**
      * Constructor for objects of class Picture
@@ -22,6 +23,7 @@ public class Picture
     public Picture()
     {
         // nothing to do... instance variables are automatically set to null
+        draw();
     }
 
     /**
@@ -35,23 +37,56 @@ public class Picture
         wall.makeVisible();
         
         window = new Square();
-        window.changeColor("black");
+        window.changeColor("blue");
         window.moveHorizontal(20);
         window.moveVertical(100);
         window.makeVisible();
 
         roof = new Triangle();  
+        roof.changeColor("black");
         roof.changeSize(50, 140);
         roof.moveHorizontal(60);
         roof.moveVertical(70);
         roof.makeVisible();
 
         sun = new Circle();
-        sun.changeColor("yellow");
+        sun.changeColor("orange");
         sun.moveHorizontal(180);
         sun.moveVertical(-10);
         sun.changeSize(60);
         sun.makeVisible();
+        
+        /* ground */
+        
+        ground = new Square();
+        ground.changeSize(1000);
+        ground.moveVertical(180);
+        ground.moveHorizontal(-100);
+        ground.changeColor("green");
+        ground.makeVisible();
+        
+        /* tree */
+        Square trunk1 = new Square();
+        trunk1.changeSize(20);
+        trunk1.moveHorizontal(180);
+        trunk1.moveVertical(170);
+        trunk1.changeColor("brown");
+        trunk1.makeVisible();
+        
+        Square trunk2 = new Square();
+        trunk2.changeSize(20);
+        trunk2.moveHorizontal(180);
+        trunk2.moveVertical(150);
+        trunk2.changeColor("brown");
+        trunk2.makeVisible();
+
+        
+        Square crown = new Square();
+        crown.changeColor("darkgreen");
+        crown.changeSize(70);
+        crown.moveHorizontal(180-25);
+        crown.moveVertical(80);
+        crown.makeVisible();
     }
 
     /**

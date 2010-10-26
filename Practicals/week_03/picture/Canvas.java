@@ -136,11 +136,20 @@ public class Canvas
         else if(colorString.equals("green")) {
             graphic.setColor(Color.green);
         }
+        else if(colorString.equals("darkgreen")) {
+            graphic.setColor(Color.green.darker().darker());
+        }
         else if(colorString.equals("magenta")) {
             graphic.setColor(Color.magenta);
         }
         else if(colorString.equals("white")) {
             graphic.setColor(Color.white);
+        }
+        else if(colorString.equals("brown")) {
+            graphic.setColor(new Color(0x8b4513));
+        }
+        else if(colorString.equals("orange")) {
+            graphic.setColor(new Color(0xffa500));
         }
         else {
             graphic.setColor(Color.black);

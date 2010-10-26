@@ -1,0 +1,41 @@
+Level 3: Modelling objects -- solution
+
+Copyright 2010 Jan Minář <rdancer@rdancer.org>
+
+
+Class Pet:
+    boolean alive
+    String name
+    String ownerName
+    Date dateOfBirth;
+    int health;
+    eat()
+    sleep()
+    forage()
+
+
+Class Cat
+	inherits Pet:
+    /** how many lives does it have left? */
+    int livesLeft 
+    /** is currently in flight? */
+    boolean inFlight
+    
+Class Dog
+	inherits Pet:
+    bark()
+    play()
+
+Class Fish
+	inherits Pet:
+    swim()
+    bob()
+
+Class Snake
+	inherits Pet:
+    hiss()
+    shed()
+    /** is currently shedding skin? */
+    boolean shedding
+    /** how many times has shed skin? */
+    int numberOfTimesShedSkin

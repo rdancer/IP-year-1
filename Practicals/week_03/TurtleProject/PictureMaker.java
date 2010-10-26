@@ -21,40 +21,39 @@ public class PictureMaker
     public void drawInitials() 
     {
         world.dropIn(fred);
+        Turtle pen = fred; // Reuse the same name for clarity
         
-        fred.penUp();
-        fred.left(90);
-        fred.forward(200);
-        fred.left(90);
-        fred.forward(200);
-        fred.left(90);
-        
-        fred.penDown();
-        fred.forward(175);
-        fred.left(90);
-        fred.forward(175);
-        fred.left(90);
-        fred.forward(175);
-        fred.right(90);
-        fred.forward(175);
-        fred.right(90);
-        fred.forward(175);
-        fred.penUp();
-        
-        fred.forward(50);
-        fred.penDown();
-        fred.forward(175);
-        fred.penUp();
-        fred.left(180);
-        fred.forward(75);
-        fred.left(90);
-        fred.penDown();
-        fred.forward(350);
-        fred.right(90);
-        fred.forward(100);
-        fred.right(90);
-        fred.forward(50);
-        
+        /* draw "J" */
+
+        pen.penDown();
+        pen.right(120);
+        pen.forward(30);
+        pen.left(120);
+        pen.forward(120);
+        pen.penUp();
+
+
+        /* move over */
+
+        pen.right(90);
+        pen.forward(30);
+        pen.right(90);
+
+
+        /* draw "M" */
+
+        pen.penDown();
+        pen.forward(120);
+        pen.right(180);
+        pen.forward(120);
+        pen.right(150);
+        pen.forward(70);
+        pen.left(120);
+        pen.forward(70);
+        pen.left(210);
+        pen.forward(120);
+        pen.penUp(); // not strictly necessary
+      
         world.removeTurtle(fred);
     }
     

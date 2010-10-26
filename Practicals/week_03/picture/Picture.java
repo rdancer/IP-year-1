@@ -9,6 +9,9 @@
  * @author  Michael Kolling and David J. Barnes
  * @author  Jan Minář <rdancer@rdancer.org>
  */
+
+import java.awt.*;
+
 public class Picture
 {
     private Square wall;
@@ -24,6 +27,7 @@ public class Picture
     {
         // nothing to do... instance variables are automatically set to null
         draw();
+        sunset();
     }
 
     /**
@@ -51,9 +55,9 @@ public class Picture
 
         sun = new Circle();
         sun.changeColor("orange");
-        sun.moveHorizontal(180);
+        sun.moveHorizontal(-20);
         sun.moveVertical(-10);
-        sun.changeSize(60);
+        sun.changeSize(40);
         sun.makeVisible();
         
         /* ground */
@@ -114,6 +118,25 @@ public class Picture
             window.changeColor("black");
             roof.changeColor("green");
             sun.changeColor("yellow");
+        }
+    }
+    
+    /**
+     * Make the sun set below the horizon, slowly
+     */
+    public void sunset()
+    {
+        if(wall != null)   // only if it's painted already...
+        {
+            // XXX Should be behind all the other shapes; is in the front.
+            //     The clipping does not work for some reason; therefore we just
+            //     intersect the ground a little, and then erase the sun.
+            
+            Canvas canvas = Canvas.getCanvas();
+            // DNW
+            //canvas.setClip(new Rectangle(10,10));
+            sun.slowMoveVertical(150);
+            canvas.erase(sun);
         }
     }
 }
